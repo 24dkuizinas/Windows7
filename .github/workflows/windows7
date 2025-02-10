@@ -1,0 +1,12 @@
+name: Windows 7 VM Test
+on: [push]
+jobs:
+  windows:
+    runs-on: windows-2019
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Setup Windows 7 environment
+      run: |
+        # Commands to install Windows 7 and configure it
+
